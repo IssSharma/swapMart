@@ -1,0 +1,149 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static 'styles/landing.css' %}">    
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<title>SWAP-MART</title>
+</head>
+<body>
+   
+
+      <div class="navigation w3-highway-blue">
+        <nav class="nav-container w3-padding-large">
+          <div class="logo">
+            <a href="#home"> SWAP-<span>MART</span></a>
+          </div>
+          <div class="mobile-button">
+            <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+          </div>
+
+          
+
+          <div class="links">
+             
+              <a href="/exchange" class="right">Exchange</a>
+           
+
+          </div>
+          <div id="mobile-sidenav" class="mobile-links w3-highway-blue">
+          <div class="mobile-logo" style="display: inline;">
+            <a href="#home" class="logo">SWAP-<span>MART</span></a>
+            <span style="width: 100%;"></span>
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
+          </div>
+         
+            <a href="./explore.html" onclick="toggleMobileNavigation()">Exchange</a>
+           
+          </div>
+        </nav>   
+      </div>
+
+      <div class="hero" id="home">
+        <div class="text container">
+          <p class="pre-title">"Give your book countless lives"</p>
+          <h1 class="title"> SWAP-<span>MART</span></h1>
+          <p class="post-title">Connect with the rest of the world!</p>
+        </div>
+      </div>
+      
+      <!-- services section starts  -->
+
+<section class="services" id="services">
+
+  <h1 class="heading">
+      <span>Why To Exchange Books?</span>
+  </h1>
+
+  <div class="box-container">
+
+      <div class="box">
+        <i class="fa-regular fa-book-open fa-beat-fade fa-2xs" style="color: #71c6dd;"></i>
+          <h3>Simple</h3>
+          <p>Give 1 Take 1 Read it,<br> Exchange at Your Doorsteps.</p>
+      </div>
+      <div class="box">
+        <i class="fa-duotone fa-books"></i>
+          <h3>Save</h3>
+          <p>Socialise Cost. Saves Spaces, <br>Keep reading newer titles just for the cost of shipping.</p>
+      </div>
+      <div class="box">
+          <i class="#pic"></i>
+          <h3>Social</h3>
+          <p>Connect readers to Books lying idle in every home.</p>
+      </div>
+      <div class="box">
+          <i class="#pic"></i>
+          <h3>Convenient</h3>
+          <p>User friendly and accessible way of<br> saving time and money both.</p>
+      </div>
+      <div class="box">
+          <i class="#pic"></i>
+          <h3>Less for more</h3>
+          <p>Wider variety of books,  Being eco-friendly,<br> getting more social interaction, and freeing up space</p>
+      </div>
+      <div class="box">
+          <i class="#pic"></i>
+          <h3>Less Paper...more trees</h3>
+          <p>Reusing Books, Reducing Waste, <br>Sharing knowledge, and encouraging others to do the same</p>
+      </div>
+
+  </div>
+
+</section>
+
+
+
+      
+    <div class="about container w3-padding-large" id="about">
+      <div class="text-one">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+     
+       </div>
+        <div class="text-one">
+           <h2>Our Vision</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                     </div>
+     
+  </div>
+
+
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>SWAP-MART</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
+      </div>
+      <div class="box">
+          <h3>follow us</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+      </div>
+
+  </div>
+
+
+      <script>
+        function toggleMobileNavigation() {
+          const mobileNavigation = document.getElementById("mobile-sidenav");
+          mobileNavigation.classList.toggle('mobile-links-active');
+        }
+    </script>
+</body>
+</html>
